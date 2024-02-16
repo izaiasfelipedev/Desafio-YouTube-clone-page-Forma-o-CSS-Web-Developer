@@ -1,0 +1,390 @@
+header {
+  width: 100%;
+  height: 56px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header {
+  width: 146px;
+  height: 24px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header .menu {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left-header .menu div {
+  width: 18px;
+  height: 2px;
+
+  border-radius: 2px;
+
+  background-color: #000000;
+}
+
+.left-header img {
+  width: 90px;
+  height: 20px;
+}
+
+.center-header {
+  max-width: 404px;
+  height: 40px;
+
+  display: inline-flex;
+  position: relative;
+
+  border: 1px solid #CCCCCC;
+}
+
+.center-header #research-field {
+  width: 348px;
+  height: 100%
+}
+
+.center-header #search {
+  width: 57px;
+  height: 100%;
+
+  border-left: 1px solid #CCCCCC;
+
+  background: #F8F8F8;
+}
+
+.center-header #figure-search {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 8px;
+  right: 16.5px;
+}
+
+.right-header {
+  width: 130px;
+  height: 34px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #FFFFFF;
+}
+
+.right-header #camera,
+.right-header #Notifications {
+  width: 24px;
+  height: 24px;
+}
+
+.right-header #user {
+  width: 34px;
+  height: 34px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 1px solid #000000;
+  
+  background-color: #42445A;
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+
+main .watching-video {
+  position: absolute;
+  top: 84px;
+  left: 75px;
+
+  width: 952px;
+  height: 746px;
+  margin-right: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.watching-video .field-video .current-video {
+  width: 100%;
+  height: 537px;
+}
+
+main .watching-video .about-video {
+  width: 100%;
+  height: 209px;
+  row-gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.watching-video .about-video h1 {
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.watching-video .about-video .video-actions {
+  width: 902px;
+  height: auto;
+  column-gap: 42px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-video .video-actions .channel-infos {
+  width: 160px;
+  height: 42px;
+  column-gap: 12px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-actions .channel-infos .channel-img {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel-infos .channel-img .current-channel {
+  width: 42px;
+  height: 42px;
+}
+
+.video-actions .channel-infos .views {
+  width: 106px;
+  height: 32px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.channel-infos .views .channel-name {
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.channel-infos .views .full-view {
+  font-family: 'roboto',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.about-video .video-actions .subscribe-button {
+  width: 159px;
+  height: 40px;
+  border-radius: 2px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #CC0000;
+  
+}
+
+.video-actions .subscribe-button .text-button {
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  
+  color: #FFFFFF;
+}
+
+.about-video .video-actions .like {
+  width: 63px;
+  height: 24px;
+  
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-actions .like .like-image {
+  width: 24px;
+  height: 24px;
+}
+
+.video-actions .like .current-likes {
+  font-family: 'roboto', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.about-video .video-actions .deslike {
+  width: 100px;
+  height: 24px;
+  
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-actions .deslike .deslike-image {
+  width: 24px;
+  height: 24px;
+}
+
+.video-actions .deslike .current-deslike {
+  font-family: 'roboto', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.about-video .video-actions .share {
+  width: 115px;
+  height: 24px;
+  
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-actions .share .share-image {
+  width: 24px;
+  height: 24px;
+}
+
+.video-actions .share .text-share {
+  font-family: 'roboto', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.about-video .video-actions .download {
+  width: 95px;
+  height: 24px;
+  
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-actions .download .download-image {
+  width: 24px;
+  height: 24px;
+}
+
+.video-actions .download .text-download {
+  font-family: 'roboto', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.watching-video .about-video h3 {
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.watching-video .about-video p {
+  width: 510px;
+  height: 64px;
+  
+  font-family: 'roboto',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+main .side_bar-area {
+  position: absolute;
+  top: 84px;
+  left: 1052px;
+
+  width: 372px;
+  height: 938px;
+  row-gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .side_bar-area .side_bar-videos {
+  width: auto;
+  height: auto;
+  column-gap: 16px;
+
+  display: inline-flex;
+}
+
+.side_bar-area .side_bar-videos .video {
+  width: 160px;
+  height: 90px;
+}
+
+.side_bar-videos .video img {
+  width: 100%;
+  height: 100%;
+}
+
+.side_bar-area .side_bar-videos .description {
+  width: 196px;
+  height: 89px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.side_bar-videos .description h2 {
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.side_bar-videos .description h3 {
+  width: 120px;
+  height: auto;
+  
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  
+  color: #515151;
+}
+
